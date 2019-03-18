@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #242d3c;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registr-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.auth-wrapper {
+    display: flex;
+}
+.sign{
+    width: 200px;
+    margin: 20px;
+    height: 70px;
+    background-color: #425158;
+    text-align: center;
+    border: 1px solid #ff493c;
+    border-radius:10px
+}
+
+.sign > a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 4;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    border-radius:10px
+}
+.sign > a:hover {
+    background-color:#fff;
+    color: #ff493c;
+    transition: 0.5s ease-in-out;
+
+}
+
+.products{
+    width: 440px;
+    height: 70px;
+    background-color: #425158;
+    text-align: center;
+    margin: 20px;
+}
+.products {
+    border-radius:10px;
+}
+.products > a{
+    width: 100%;
+    height: 100%;
+    line-height: 4;
+    display: block;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    border-radius:10px;
+    border: 1px solid #ff493c;
+}
+
+.products > a:hover {
+    background-color:#fff;
+    color: #fff;
+    color: #ff493c;
+    transition: 0.5s ease-in-out;
+}
