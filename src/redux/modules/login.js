@@ -23,9 +23,11 @@ export const login = (state = initialState, action) => {
                 isAuth: true
             };
         case  userLogin.LOGIN_FAILURE:
+            console.log('err'.action)
             return {
                 ...state,
-                err: action.err,
+
+                err: action.payload.response.data.data.message,
             };
         default:
             return state
@@ -44,9 +46,10 @@ export function login_Success({data}) {
     }
 }
 
-function login_failure(err) {
+function login_failure(error) {
     return {
-        type: userLogin.LOGIN_FAILURE, err
+        type: userLogin.LOGIN_FAILURE,
+        payload: error
     }
 
 }

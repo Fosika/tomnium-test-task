@@ -25,6 +25,7 @@ class Login extends Component {
             password
         } = this.state;
         this.props.UsersLogin({username, password})
+        this.setState({username:'',password:''})
     };
 
 
@@ -36,6 +37,9 @@ class Login extends Component {
                         <form>
                             <div>
                                 <h1>Login</h1>
+                                {this.props.err &&
+                                <div>{this.props.err}</div>
+                                }
                                 <input
                                     type="text"
                                     onChange={(e)=>this.handleInputChange('username', e)}
@@ -43,6 +47,7 @@ class Login extends Component {
                                 />
                             </div>
                             <div>
+
                                 <input
                                     type="password"
                                     onChange={(e)=>this.handleInputChange('password', e)}
@@ -69,6 +74,7 @@ class Login extends Component {
 const mapStateToProps = store => {
     return {
         isAuth: store.login.isAuth,
+        err: store.login.err,
     }
 };
 export default connect(mapStateToProps, {UsersLogin})(Login);

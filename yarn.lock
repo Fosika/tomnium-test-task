@@ -3122,13 +3122,6 @@ delegates@^1.0.0:
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
   integrity sha1-hMbhWbgZBP3KWaDvRM2HDTElD5o=
 
-demon@^1.4.4:
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/demon/-/demon-1.4.4.tgz#15c4b58b97f0011ba3b46c6dfdcea83572685254"
-  integrity sha1-FcS1i5fwARujtGxt/c6oNXJoUlQ=
-  dependencies:
-    parseargv "0.0.1"
-
 depd@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
@@ -6804,11 +6797,6 @@ no-case@^2.2.0:
   dependencies:
     lower-case "^1.1.1"
 
-node-bin-setup@^1.0.0:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/node-bin-setup/-/node-bin-setup-1.0.6.tgz#4b5c9bb937ece702d7069b36ca78af4684677528"
-  integrity sha512-uPIxXNis1CRbv1DwqAxkgBk5NFV3s7cMN/Gf556jSw6jBvV7ca4F9lRL/8cALcZecRibeqU+5dFYqFFmzv5a0Q==
-
 node-forge@0.7.5:
   version "0.7.5"
   resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.7.5.tgz#6c152c345ce11c52f465c2abd957e8639cd674df"
@@ -6888,13 +6876,6 @@ node-releases@^1.1.3:
   integrity sha512-bKdrwaqJUPHqlCzDD7so/R+Nk0jGv9a11ZhLrD9f6i947qGLrGAhU3OxRENa19QQmwzGy/g6zCDEuLGDO8HPvA==
   dependencies:
     semver "^5.3.0"
-
-node@^10.15.2:
-  version "10.15.2"
-  resolved "https://registry.yarnpkg.com/node/-/node-10.15.2.tgz#f98423f14dade75964581dbed6c3a4f0b31167ad"
-  integrity sha512-lRl6wM6fAqJLwBcxrGGweCr1wuLWViwhFEydeiETriJcDbTTdEonyxTxALWJKs0lh+WmCKTs1QcKsrEHdXcI9g==
-  dependencies:
-    node-bin-setup "^1.0.0"
 
 nodemon@^1.18.10:
   version "1.18.10"
@@ -7349,11 +7330,6 @@ parse5@5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-5.1.0.tgz#c59341c9723f414c452975564c7c00a68d58acd2"
   integrity sha512-fxNG2sQjHvlVAYmzBZS9YlDp6PTSSDwa98vkD4QgVDDCAo84z5X1t5XyJQ62ImdLXx5NdIIfihey6xpum9/gRQ==
-
-parseargv@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/parseargv/-/parseargv-0.0.1.tgz#2ebf927ce7358221d89128554be63ec48d9e5d19"
-  integrity sha1-Lr+SfOc1giHYkShVS+Y+xI2eXRk=
 
 parseurl@~1.3.2:
   version "1.3.2"

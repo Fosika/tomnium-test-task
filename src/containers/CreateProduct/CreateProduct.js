@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {postCreateProduct} from "../../redux/modules/createProduct";
 import {Link} from 'react-router-dom';
-import CheckToken from '../../component/CheckToken/CheckToken';
 import './CreateProduct.css';
 
 
@@ -34,7 +33,7 @@ class CreateProduct extends Component {
     render() {
         return (
             <div className='create-wrapper'>
-                <CheckToken>
+
                     <form className='create-form'>
                         <div className='create-product-wrapper'>
                             <h1 className='headline'>Create product</h1>
@@ -63,7 +62,7 @@ class CreateProduct extends Component {
                             <Link to={'/products'}>Products</Link>
                         </div>
                     </form>
-                </CheckToken>
+
             </div>
         );
     }

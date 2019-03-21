@@ -55,3 +55,7 @@ input{
     color: #ff493c;
     transition: 0.5s ease-in-out;
 }
+.error {
+    text-align: center;
+    color: red;
+}

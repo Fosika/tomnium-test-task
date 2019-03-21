@@ -1,6 +1,7 @@
 const bcrypt = require('bcrypt-nodejs');
 const User = require('../../Models/userModel');
-
+const errorMsg = require('../../Helpers/error-msg');
+const resHandler = require('../../Helpers/response');
 
 exports.userRegistration = (req, res) => {
     let user = new User;
@@ -10,14 +11,14 @@ exports.userRegistration = (req, res) => {
     bcrypt.hash(password, null, null, function(err, hash){
         if (err){
             console.log('err', err);
-            res.sendStatus(500)
+            return resHandler(res, 500, true, errorMsg. ShortPassword)
         }
         else {
             user.password = hash;
             User.findOne({username: user.username})
             .then((findUser) => {
                 if(findUser) {
-                    return res.send('User already exist')
+                    return resHandler(res, 500, true, errorMsg.UserAlreadyExist)
                 }else{
                     user.save()
                     .then(() => {
@@ -25,7 +26,7 @@ exports.userRegistration = (req, res) => {
                     })
                     .catch((err) => {
                         console.log(err);
-                        res.sendStatus(500)
+                        return resHandler(res, 500, true, errorMsg.MissingName)
                     })
                 }
             })

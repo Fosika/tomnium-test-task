@@ -43,10 +43,11 @@ function createProductSuccess(item) {
     }
 }
 
-function createProductFailure (err) {
+function createProductFailure (error) {
     return {
         type: CreateProduct.CREATE_PRODUCT_FAILURE,
-        err
+        payload: error
+
     }
 }
 

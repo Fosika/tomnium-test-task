@@ -28,8 +28,8 @@ exports.getProductsById = (req, res) => {
 exports.getAllProducts = (req, res) => {
     Product.find()
         .then((products) => {
-                res.json(products)
-            })
+            res.json(products)
+        })
         .catch((err) => {
             console.log(err);
             return res.sendStatus(500)

@@ -29,17 +29,22 @@ class Registration extends Component {
         } = this.state;
 
         this.props.postRegistration({username, password})
+        this.setState({username:'',password:''})
     };
+    componentWillUnmount() {
+        this.setState({username:'',password:''})
+    }
 
     render() {
         return (
             <div className="login-wrapper">
                 {!this.props.isAuth ?
                     <div className='input-wrapper'>
+
                         <form>
                             <h1>Registration</h1>
                             {this.props.err &&
-                            <label>{this.props.err}</label>
+                            <div className="error">{this.props.err}</div>
                             }
 
                             <input
@@ -57,7 +62,7 @@ class Registration extends Component {
                     </div>
                     : <Redirect
                         to={{
-                            pathname: '/products',
+                            pathname: '/login',
                             state: {from: this.props.location},
                         }}
                     />}
